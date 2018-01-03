@@ -6,6 +6,7 @@
   * [Celery](chapter1/celery.md)
   * [Mock](chapter1/mock.md)
   * [Xshell](chapter1/xshell.md)
+  * [Docker](chapter1/docker.md)
 * [Tech. Sharing](tech-sharing.md)
   * [Design Patterns](tech-sharing/design-patterns.md)
     * [Singleton](tech-sharing/design-patterns/singleton.md)
