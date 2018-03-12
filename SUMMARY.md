@@ -14,5 +14,6 @@
   * [Design Patterns](tech-sharing/design-patterns.md)
     * [Singleton](tech-sharing/design-patterns/singleton.md)
   * [Obvious API \(O API\)](tech-sharing/obvious-api-o-api.md)
+  * sscanf in python
 * Problems
 
