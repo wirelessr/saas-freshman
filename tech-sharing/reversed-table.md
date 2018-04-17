@@ -24,7 +24,7 @@ for k, v in CARS.items():
 		return k
 ```
 
-但這樣在大量的query下，會需要O(nlogn)。這時最直覺的作法是做一個反向表，讓他一樣以查表來找，就可以維持O(logn)：
+但這樣在大量的query下，會需要O(n)。這時最直覺的作法是做一個反向表，讓他一樣以查表來找，就可以維持O(1)：
 
 ```py
 VENDORS = {
