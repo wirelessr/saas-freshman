@@ -16,5 +16,6 @@
   * [Obvious API \(O API\)](tech-sharing/obvious-api-o-api.md)
   * [sscanf in python](tech-sharing/sscanf-in-python.md)
   * [Function name in python](tech-sharing/function-name-in-python.md)
-* Problems
+  * [Reversed table](tech-sharing/reversed-table.md)
+* [Problems](problems.md)
 
