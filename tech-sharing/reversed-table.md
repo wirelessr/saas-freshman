@@ -24,7 +24,7 @@ for k, v in CARS.items():
 		return k
 ```
 
-但這樣的在大量的query下，會需要O(n)。這時最直覺的作法是做一個反向表，讓他一樣以查表來找：
+但這樣在大量的query下，會需要O(nlogn)。這時最直覺的作法是做一個反向表，讓他一樣以查表來找，就可以維持O(logn)：
 
 ```py
 VENDORS = {
@@ -39,7 +39,7 @@ VENDORS = {
 }
 ```
 
-這樣當更新了CARS，也要同時更新VENDORS，很麻煩，最好能夠自動化解決，所以要透過list comprehension：
+當更新了CARS，也要同時更新VENDORS，很麻煩，最好能夠自動化解決，所以要透過list comprehension：
 
 ```py
 VENDORS = dict([(t, k) for k, v in CARS.items() for t in v])
