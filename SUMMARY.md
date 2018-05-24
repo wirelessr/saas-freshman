@@ -17,5 +17,7 @@
   * [sscanf in python](tech-sharing/sscanf-in-python.md)
   * [Function name in python](tech-sharing/function-name-in-python.md)
   * [Reversed table](tech-sharing/reversed-table.md)
+  * [Pythonic](tech-sharing/pythonic.md)
+    * [Split string every nth character?](tech-sharing/pythonic/split-string-every-nth-character.md)
 * [Problems](problems.md)
 
