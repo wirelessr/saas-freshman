@@ -5,8 +5,8 @@
 1. 開一個空的github repo
 2. 開一個新的heroku app
 3. 設定heroku綁定github做自動deploy![](/assets/5.png)
-4. 假設你已經選好目錄也已經`npm init`了，使用express產生器快速生成一個prototype。註1
-5. `npm install`把相依套件安裝完成
+4. 假設你已經選好目錄了，使用express產生器快速生成一個prototype。註1
+5. 進入產生器建立的目錄，`npm install`把相依套件安裝完成
 6. (optional) `npm start`然後就可以去`localhost:3000`看看有沒有正常架起來
 7. `git remote add origin $(github_path)`
 8. git push origin master
