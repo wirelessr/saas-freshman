@@ -23,4 +23,5 @@
 * [Node.js Buildup](nodejs-buildup.md)
   * [Blueprint](nodejs-buildup/blueprint.md)
   * [Component](nodejs-buildup/component.md)
+  * [Buildup website](nodejs-buildup/buildup-website.md)
 
