@@ -21,4 +21,5 @@
     * [Split string every nth character?](tech-sharing/pythonic/split-string-every-nth-character.md)
 * [Problems](problems.md)
 * [Node.js Buildup](nodejs-buildup.md)
+  * [Blueprint](nodejs-buildup/blueprint.md)
 

@@ -22,6 +22,7 @@
 2. Unit test -&gt; test restful
 3. CI -&gt; Travis CI
 4. D3太底層，可以用C3精簡圖表的code
+5. 多方驗證，例如：email或者社群網站
 
 
 
