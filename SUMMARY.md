@@ -28,5 +28,5 @@
   * [User models](nodejs-buildup/models.md)
   * [Record models](nodejs-buildup/record-models.md)
   * [Unit test](nodejs-buildup/unit-test.md)
-  * [Routing](nodejs-buildup/routing.md)
+  * [Routing/Session](nodejs-buildup/routing.md)
 
