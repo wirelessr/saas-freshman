@@ -40,7 +40,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 ```
 
-接著是用`app.use`定義各種要使用的middleware。
+接著是用`app.use`定義各種要使用的middleware。`express.static`定義了哪一個目錄會被使用者存取到，以本例來說就是public這個資料夾，他會落在根目錄下的public內。
 
 ```js
 var app = express();
