@@ -26,4 +26,5 @@
   * [Buildup website](nodejs-buildup/buildup-website.md)
   * [Source code overview](nodejs-buildup/source-code-overview.md)
   * [User models](nodejs-buildup/models.md)
+  * [Record models](nodejs-buildup/record-models.md)
 

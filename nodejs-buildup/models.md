@@ -30,7 +30,7 @@ export GOOGLE_SHEET_ID="$(id)"
 也就是SQL的column name。
 
 # 開始實做user models
-首先先安裝存取google試算表的邏輯層和async，在下一節會仔細介紹async：
+首先先安裝存取google試算表的邏輯層和async，在後面的章節*Asynchronous*會仔細介紹async：
 > npm install google-spreadsheet async --save
 
 開一個新檔的資料夾`models`，本站所有的model都會放在這個資料夾內。以下是`models/users.js`的實做。
@@ -97,7 +97,7 @@ module.exports.create = function(userdata, callback) {
 }
 ```
 
-這邊列出create，剩下三個基本上大同小異，都是以setAuth開始和google試算表認證，接著取出users這張表，從表內查詢是否有username存在，接著做相對應的處理。傳進來的userdate是一個object：
+這邊列出create，剩下三個基本上大同小異，都是以setAuth開始和google試算表認證，接著取出users這張表，從表內查詢是否有username存在，接著做相對應的處理。傳進來的userdate是一個object，若是需要更多屬性，只要新增試算表內的DB schema，就可以擴充，非常方便：
 ```js
 userdata = {
     username: '',
