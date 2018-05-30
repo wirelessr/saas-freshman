@@ -43,3 +43,4 @@ describe('test users', function() {
 有一點很重要，若是直接`mocha`，八成會噴error，因為整個資料庫是從google試算表取得，受限於網路頻寬，因此要延長mocha的timeout：
 > mocha --timeout 15000
 
+完整的測試程式在[github](https://github.com/wirelessr/accounting-apps/blob/master/test/test_models.js)
