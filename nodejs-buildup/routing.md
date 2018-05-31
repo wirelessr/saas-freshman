@@ -14,7 +14,7 @@ app.use(cookieSession({
 }));
 ```
 
-# Index
+# Restful API
 將cookie-session設定完成後，開始編輯index.js進行routing的設定。本站需要首頁、使用者登入和註冊、登出、記帳首頁、紀錄支出、紀錄收入、列出紀錄。
 
 1. get('/)
@@ -24,3 +24,36 @@ app.use(cookieSession({
 5. post('/accounting')
 6. post('/incoming')
 7. get('/list/:type/:range*?')
+
+以下例子簡單展示一下後端直接回傳一個HTML的檔案作為首頁的方式，透過`sendFile()`就能將檔案作為回傳值，在本例中選定檔案的相對路徑即可。
+
+```js
+// GET route for reading data
+router.get('/', function (req, res, next) {
+  return res.sendFile(path.join(process.cwd(), 'templateLogReg/index.html'));
+});
+```
+
+以下是稍微複雜的例子，使用者建立和登入的API被整合成一個function，當form傳過來的是logusername和logpassword是使用者登入，否則是建立使用者。無論是登入或建立使用者，都需要在回傳前設定cookie中的userId，也就是之前提到的UUID，`req.session.userId = user.uid`。最後將使用者重新導向至profile。
+
+```js
+var User = require('../models/users');
+
+    var userData = {
+      email: req.body.email,
+      username: req.body.username,
+      password: req.body.password,
+      passwordConf: req.body.passwordConf,
+    }
+
+    User.create(userData, function (error, user) {
+      if (error) {
+        return next(error);
+      } else {
+        req.session.userId = user.uid;
+        return res.redirect('/accounting');
+      }
+    });
+```
+
+使用者建立的過程和之前單元測試時大同小異，唯一的差別在於內容來自於form POST進來的資料。
