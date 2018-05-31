@@ -57,3 +57,4 @@ var User = require('../models/users');
 ```
 
 使用者建立的過程和之前單元測試時大同小異，唯一的差別在於內容來自於form POST進來的資料。
+完整的檔案請參考[github](https://github.com/wirelessr/accounting-apps/blob/master/routes/router.js)
