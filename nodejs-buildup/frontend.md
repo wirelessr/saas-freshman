@@ -98,4 +98,6 @@ xhttp.open("GET", "/list/time/"+start_ts+'-'+end_ts, true);
 xhttp.send();
 ```
 
+本站的排版皆是使用W3提供的w3-half或w3-third，好處是w3會將各種不同的螢幕尺寸考慮進去，進而呈現適合各種裝置的版面配置。
+
 完整的程式碼在[github](https://github.com/wirelessr/accounting-apps/blob/master/templateLogReg/js/accounting.js)
