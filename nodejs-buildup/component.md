@@ -20,7 +20,7 @@ Google spreadsheet。因為需要一個空間作為使用者資料與會計資�
 
 > npm install nodemon -g
 
-`-g`的意思是安裝到本機，而不只是在這個專案內。裝好後若是專案內的`npm start`已經正確設定了，那麼只要在專案目錄下`npx nodemon`就會開啟自動監測。
+`-g`的意思是安裝到本機，而不只是在這個專案內。裝好後若是專案內的`npm start`已經正確設定了，那麼只要在專案目錄下`nodemon`就會開啟自動監測。若是根本不想安裝，只是想使用，也可以透過`npx`這個工具來執行，npx可以執行沒有安裝的套件，`npx nodemon`，這樣即使沒安裝nodemon也可以體驗nodemon帶來的美好。
 
 ## mocha
 
