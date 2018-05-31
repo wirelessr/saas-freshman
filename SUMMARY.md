@@ -30,4 +30,5 @@
   * [Unit test](nodejs-buildup/unit-test.md)
   * [Routing/Session](nodejs-buildup/routing.md)
   * [JavaScript Date](nodejs-buildup/javascript-date.md)
+  * [Frontend](nodejs-buildup/frontend.md)
 
