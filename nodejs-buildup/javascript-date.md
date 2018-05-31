@@ -56,7 +56,15 @@ function getWeeksInMonth(month, year){
 
 # 當月每週起始和結束時間
 
-取得當週的時間必須透過getWeeksInMonth()轉成timestamp。
+取得當週的時間必須透過getWeeksInMonth()轉成timestamp。還有一點要注意，這邊採用yyyy-mm來串接整數，若是沒有將整數補零，會使字串不符合ISO規範，因此還需要實做padding。
+
+```js
+Number.prototype.pad = function(size) {
+  var s = String(this);
+  while (s.length < (size || 2)) {s = "0" + s;}
+  return s;
+}
+```
 
 ```js
 var var isoy_m = isodate.split('-');

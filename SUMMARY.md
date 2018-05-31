@@ -31,4 +31,6 @@
   * [Routing/Session](nodejs-buildup/routing.md)
   * [JavaScript Date](nodejs-buildup/javascript-date.md)
   * [Frontend](nodejs-buildup/frontend.md)
+  * [Draw Chart](nodejs-buildup/draw-chart.md)
+  * Asynchronous
 
