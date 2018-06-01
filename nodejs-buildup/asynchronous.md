@@ -120,5 +120,5 @@ function wf_done(callback) {
 
 在async的文件中還有介紹許多關於流程控制的API，請看註1。另外可以透過註2更加理解非同步的流程控制基礎。
 
-[1](https://caolan.github.io/async/docs.html#controlflow)
-[2]()
+[1] [async document](https://caolan.github.io/async/docs.html#controlflow)
+[2] [control flow](http://book.mixu.net/node/ch7.html)
