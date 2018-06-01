@@ -157,3 +157,5 @@ bar.append('text')
 		 );
 }
 ```
+
+完整的程式碼在[github](https://github.com/wirelessr/accounting-apps/tree/master/templateLogReg)
