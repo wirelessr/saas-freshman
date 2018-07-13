@@ -40,4 +40,4 @@ tzlocal==1.5.1
 
 就能夠看到print出來的結果。
 
-![github](https://github.com/wirelessr/sched_tasks)
+[github](https://github.com/wirelessr/sched_tasks)
