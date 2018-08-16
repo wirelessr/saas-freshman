@@ -11,6 +11,7 @@
     * [Communicating Between Containers](chapter1/docker/communicating-between-containers.md)
     * [Orchestration using Docker Compose](chapter1/docker/orchestration-using-docker-compose.md)
   * [cron job](chapter1/cron-job.md)
+  * [Pandas](chapter1/pandas.md)
 * [Tech. Sharing](tech-sharing.md)
   * [Design Patterns](tech-sharing/design-patterns.md)
     * [Singleton](tech-sharing/design-patterns/singleton.md)
