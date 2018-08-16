@@ -1,8 +1,10 @@
 # Pandas
-最近在學AI，但所謂AI其實更多時間是在處理資料。這邊紀錄一下pandas的使用過程，因為不想看完整本說明書，就更到甚麼問題就找甚麼解方。
-先科普一下，pandas有分兩種數據結構，一個是Series一個是DataFrame，以python來類比分別對應到list和dict。但DataFrame更加強大，除了行索引(index)之外也可以做出列索引(column)。
+
+最近在學AI，但所謂AI其實更多時間是在處理資料。這邊紀錄一下pandas的使用過程，因為不想看完整本說明書，就碰到甚麼問題就找甚麼解方。  
+先科普一下，pandas有分兩種數據結構，一個是Series一個是DataFrame，以python來類比分別對應到list和dict。但DataFrame更加強大，除了行索引\(index\)之外也可以做出列索引\(columns\)。
 
 ## 初始化
+
 ```python
 dates = pd.date_range('20160101',periods=6)
 df = pd.DataFrame(np.random.randn(6,4),
@@ -21,6 +23,7 @@ df = pd.DataFrame(np.random.randn(6,4),
 ```
 
 ## 取值
+
 Pandas取值是以列索引為主，以上面的例子來說，只能依照abcd來拿資料，`[x]`形式或`.x`形式皆可。
 
 ```python
@@ -63,6 +66,7 @@ Name: 2016-01-01 00:00:00, dtype: float64
 ```
 
 ## filter
+
 可以根據列索引來篩選，例如大小於或等於。
 
 ```python
@@ -76,7 +80,7 @@ df[df.a > 0]
 2016-01-05  1.008789 -0.286005  2.340308  0.567542
 ```
 
-也可以多重條件，但有兩點要注意，and和or使用的是位元運算子(&, |)且要括號。
+也可以多重條件，但有兩點要注意，and和or使用的是位元運算子\(&, \|\)且要括號。
 
 ```python
 df[(df.a > 0) & (df.d > 0)]
@@ -89,6 +93,7 @@ df[(df.a > 0) & (df.d > 0)]
 ```
 
 ## 賦值
+
 賦值其實就是取值的相反，但有一些特殊之處，例如一次塞一列。
 
 ```python
@@ -143,3 +148,6 @@ df = df.append(pd.Series({'a':1, 'b':2, 'c':3, 'd':4}), ignore_index=True)
 
 1. index消失，變成單純數列
 2. append是mutable API，所以要把結果重新塞回變數內
+
+
+
