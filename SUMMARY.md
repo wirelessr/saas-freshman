@@ -22,6 +22,7 @@
   * [Pythonic](tech-sharing/pythonic.md)
     * [Split string every nth character?](tech-sharing/pythonic/split-string-every-nth-character.md)
     * [Find array in list](tech-sharing/pythonic/find-array-in-list.md)
+  * [CSV in python](tech-sharing/csv-in-python.md)
 * [Problems](problems.md)
 * [Node.js Buildup](nodejs-buildup.md)
   * [Blueprint](nodejs-buildup/blueprint.md)
