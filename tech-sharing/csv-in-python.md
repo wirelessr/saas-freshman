@@ -3,8 +3,6 @@ CSV算是很常使用的格式，但真要用的時候還是有些卡卡的，�
 1. Read csv from string
 2. Read csv as dict
 
-
-
 要讀一個csv format的字串而不是檔案需要透過`StringIO`，也就是將string當成檔案。在python2和python3稍微有點差別：
 
 ```python
@@ -14,7 +12,7 @@ try:
 except ImportError:
     # for Python 3.x
     from io import StringIO
-    
+
 import csv
 
 scsv = """text,with,Polish,non-Latin,lettes
@@ -33,12 +31,13 @@ for row in reader:
 
 ```python
 f = StringIO(scsv)
-reader = csv.reader(f, delimiter=',')
+reader = csv.DictReader(f, delimiter=',')
 for row in reader:
     print(row['text'], row['with'], row['lettes'])
 ```
 
 ### Reference
-[StringIO](https://stackoverflow.com/questions/3305926/python-csv-string-to-array)
+
+[StringIO](https://stackoverflow.com/questions/3305926/python-csv-string-to-array)  
 [DictReader](https://blog.gtwang.org/programming/python-csv-file-reading-and-writing-tutorial/)
 
